@@ -1,3 +1,6 @@
+Test project for a job vacanсy: https://career.habr.com/vacancies/1000096605
+Task: https://roox.notion.site/frontend-32b79baef66c4ca4a27f6f76e01a7dd2
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
