@@ -31,6 +31,9 @@ $line-height-basic-plus: 13px;
 $line-height-medium: 14px;
 $line-height-large: 16px;
 
+//font-family
+$roox-font: Roboto, sans-serif;
+
 @mixin small-text {
   font-size: $font-size-small;
   font-weight: $font-weight-normal;
@@ -43,11 +46,13 @@ $line-height-large: 16px;
   font-weight: $font-weight-normal;
   line-height: $line-height-basic;
   color: $roox-grad-third-color;
+  font-family: $roox-font;
 }
 
 @mixin input-text {
   @include placeholder-text;
   color: $roox-standart-color;
+  font-family: $roox-font;
 }
 
 @mixin button-text {
@@ -55,6 +60,7 @@ $line-height-large: 16px;
   font-weight: $font-weight-normal;
   line-height: $line-height-medium;
   color: $roox-main-color;
+  font-family: $roox-font;
 }
 
 @mixin title-text {
@@ -62,6 +68,7 @@ $line-height-large: 16px;
   font-weight: $font-weight-bold;
   line-height: $line-height-large;
   color: $roox-standart-color;
+  font-family: $roox-font;
 }
 
 @mixin sidebar-title-text {
@@ -69,6 +76,7 @@ $line-height-large: 16px;
   font-weight: $font-weight-normal;
   line-height: $line-height-medium;
   color: $roox-standart-color;
+  font-family: $roox-font;
 }
 
 @mixin user-card-point-text {
@@ -76,6 +84,7 @@ $line-height-large: 16px;
   font-weight: $font-weight-normal;
   line-height: $line-height-basic-plus;
   color: $roox-second-color;
+  font-family: $roox-font;
 }
 
 @mixin user-card-inner-text {
@@ -83,4 +92,5 @@ $line-height-large: 16px;
   font-weight: $font-weight-normal;
   line-height: $line-height-basic-plus;
   color: $roox-standart-color;
+  font-family: $roox-font;
 }

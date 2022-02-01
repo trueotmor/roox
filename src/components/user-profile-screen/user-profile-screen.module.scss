@@ -64,10 +64,9 @@
   outline: none;
   padding: 5px 10px;
   box-sizing: border-box;
-}
-
-.form__input--error {
-  border: solid 1px $roox-error-color;
+  &--error {
+    border: solid 1px $roox-error-color;
+  }
 }
 
 .form__comment {
