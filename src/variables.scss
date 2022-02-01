@@ -1,0 +1,86 @@
+// colors
+$roox-main-color: #fff;
+$roox-side-color: #bdbdbd;
+$roox-extra-color: #4b51ef;
+$roox-standart-color: #000;
+$roox-first-color: #f3f3f3;
+$roox-second-color: #a3a3a3;
+$roox-third-color: #d8d8d8;
+$roox-four-color: #afafaf;
+$roox-special-color: #52cf4f;
+$roox-error-color: #d91313;
+$roox-grad-third-color: rgba(0, 0, 0, 0.3);
+
+// font-weights
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+// font-sizes
+$font-size-small: 8px;
+$font-size-basic: 10px;
+$font-size-basic-plus: 11px;
+$font-size-medium: 12px;
+$font-size-large: 14px;
+
+// line-heights
+$line-height-small: 9px;
+$line-height-basic: 12px;
+$line-height-basic-plus: 13px;
+$line-height-medium: 14px;
+$line-height-large: 16px;
+
+@mixin small-text {
+  font-size: $font-size-small;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-small;
+  color: $roox-standart-color;
+}
+
+@mixin placeholder-text {
+  font-size: $font-size-basic;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-basic;
+  color: $roox-grad-third-color;
+}
+
+@mixin input-text {
+  @include placeholder-text;
+  color: $roox-standart-color;
+}
+
+@mixin button-text {
+  font-size: $font-size-medium;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-medium;
+  color: $roox-main-color;
+}
+
+@mixin title-text {
+  font-size: $font-size-large;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-large;
+  color: $roox-standart-color;
+}
+
+@mixin sidebar-title-text {
+  font-size: $font-size-medium;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-medium;
+  color: $roox-standart-color;
+}
+
+@mixin user-card-point-text {
+  font-size: $font-size-basic-plus;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-basic-plus;
+  color: $roox-second-color;
+}
+
+@mixin user-card-inner-text {
+  font-size: $font-size-basic-plus;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-basic-plus;
+  color: $roox-standart-color;
+}

@@ -1,0 +1,14 @@
+@import '../../variables.scss';
+.users-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.title {
+  @include title-text;
+}
+
+.total-users {
+  @include sidebar-title-text;
+}

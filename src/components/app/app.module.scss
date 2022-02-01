@@ -1,0 +1,25 @@
+.appcontainer {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(
+    90deg,
+    rgba(189, 189, 189, 1) 50%,
+    rgba(255, 255, 255, 1) 50%
+  );
+}
+
+.wrapper {
+  display: grid;
+  align-content: start;
+  width: 100%;
+  grid-template-areas: 'sidebar main';
+  grid-template-columns: 152px 1fr;
+}
+
+.main {
+  grid-area: main;
+  width: 100%;
+  background-color: #fff;
+  padding: 19px 62px 25px 31px;
+  box-sizing: border-box;
+}

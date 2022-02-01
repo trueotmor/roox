@@ -1,0 +1,94 @@
+@import '../../variables.scss';
+
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  background-color: $roox-main-color;
+  padding: 13px 41px 0 36px;
+}
+
+.user-profile__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 11px;
+}
+
+.title {
+  padding: 0;
+  margin: 0;
+  @include title-text;
+}
+
+.button {
+  border: 0;
+  border-radius: 5px;
+  background-color: $roox-extra-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  padding: 6px 11px 5px;
+  margin-right: 4px;
+  @include button-text;
+}
+
+.form {
+  border: 1px solid;
+  border-color: $roox-first-color;
+  border-radius: 8px;
+  padding: 20px 6px 19px 12px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.form__label {
+  display: flex;
+  flex-direction: column-reverse;
+  @include small-text;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.form__input {
+  max-width: 211px;
+  @include input-text;
+  margin-top: 3px;
+  border-radius: 5px;
+  border: solid 1px $roox-third-color;
+  &::placeholder {
+    @include placeholder-text;
+  }
+  outline: none;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+
+.form__input--error {
+  border: solid 1px $roox-error-color;
+}
+
+.form__comment {
+  border-radius: 5px;
+  border: solid 1px $roox-third-color;
+  outline: none;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  margin-top: 3px;
+  resize: none;
+}
+
+.form__submit {
+  float: right;
+  border: 0;
+  border-radius: 5px;
+  background-color: $roox-special-color;
+  padding: 5px 6px 5px 15px;
+  @include button-text;
+}
+
+.form__submit--lock {
+  background-color: $roox-four-color;
+}

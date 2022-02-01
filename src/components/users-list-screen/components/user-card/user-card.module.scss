@@ -1,0 +1,35 @@
+@import '../../../../variables.scss';
+.user-card {
+  display: flex;
+  background-color: $roox-first-color;
+  padding: 10px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  border-radius: 8px;
+  min-width: 300px;
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.user-card__info-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.user-card__point-text {
+  @include user-card-point-text;
+}
+
+.user-card__inner-text {
+  @include user-card-inner-text;
+}
+
+.user-card__link {
+  display: flex;
+  align-items: flex-end;
+  text-decoration: none;
+  @include button-text;
+  color: $roox-extra-color;
+}
