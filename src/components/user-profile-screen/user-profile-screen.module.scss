@@ -58,7 +58,7 @@
   margin-top: 3px;
   border-radius: 5px;
   border: solid 1px $roox-third-color;
-  &::placeholder {
+  &--locked {
     @include placeholder-text;
   }
   outline: none;

@@ -62,6 +62,7 @@ function UserProfileScreen({ users }: Props): JSX.Element {
                   data-name={item.label}
                   className={classNames(styles.form__input, {
                     [styles['form__input--error']]: errors?.[item.label],
+                    [styles['form__input--locked']]: edit,
                   })}
                   readOnly={edit}
                   defaultValue={value}
